@@ -33,6 +33,11 @@
 \RequirePackage{amssymb}
 % \RequirePackage{mathptmx}
 \RequirePackage{bm}
+% 数学证明
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\renewcommand*{\proofname}{Proof}
 % 绘图
 \RequirePackage{pgfplots}
 % 算法
