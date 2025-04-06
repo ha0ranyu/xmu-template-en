@@ -45,7 +45,7 @@
 % 自定义脚注
 \RequirePackage{scrextend}
 % 自定义参考文献
-\RequirePackage[backend=biber,citestyle=gb7714-2005ay,bibstyle=gb7714-2005,isbn=false,doi=false,url=false]{biblatex}
+\RequirePackage[backend=biber,citestyle=gb7714-2005ay,bibstyle=gb7714-2005ay,isbn=false,doi=false,url=false]{biblatex}
 % 引用、超链接
 \RequirePackage[colorlinks,citecolor=black,linkcolor=black,urlcolor=black,bookmarksnumbered=true,bookmarksopen=true]{hyperref}
 % 条件编译

@@ -30,7 +30,8 @@
 - 修改诚信承诺书标题为加粗的宋体
 - 增加诚信承诺书页码
 - 移动致谢至最前并从中英文目录中移除（原模板在最后）
-- 将致谢、参考文献、附录章节标题改为英文“Acknowledgements”、“References”、“Appendix”
+- 前置页是否需要插入空白与具体页码计算方式不明。当前版本将插入空白页，但不计算前置部分空白页的页码（正文中空白页仍将计算）。可在明确要求后进入 "xmu.cls" 文件中修改调试 `\prepagecleardouble` 有关部分，也可导出 PDF 文件后手动编辑前置页面。
+- 将致谢、参考文献、附录章节标题改为英文“Acknowledgements”、“References”、“Appendix”。若有需要（如撰写中文摘要）可进入 "xmu.cls" 文件相应部分自行修改。
 - 各级标题在目录仍为双语，但在论文内容中将只显示英文
 - 论文内容中一、二、三级英文标题统一使用加粗的 Times New Roman，四级英文标题为不加粗的 Times New Roman
 - 将编号中中文的“图”、“表”、“算法”改为英文的“Figure”、“Table”、“Algorithm”
@@ -39,7 +40,7 @@
 - 加入数学定理证明环境，默认提供 Theorem 与 Lemma。其中证明将显示为“Proof”而非“证明”。
 - 修改所有页眉为英文
 - 改正参考文献目录页码
-- 改用 biblatex 实现引用（仍符合 GB/T 7714-2005 标准）。文中引用为著者出版年制，文末为顺序编码制。
+- 改用 biblatex 实现引用（仍符合 GB/T 7714-2005 标准）。默认采用著者出版年制，若需要使用顺序编码制可进入 "xmu.cls" 文件将`\RequirePackage[backend=biber,citestyle=gb7714-2005ay,bibstyle=gb7714-2005ay,isbn=false,doi=false,url=false]{biblatex}` 一行中 "citestyle" 与 "bibstyle" 修改为 "gb7714-2005"
 - 默认从参考文献中删除ISBN、DOI、URL
 
 ## 毕业论文模版示例
