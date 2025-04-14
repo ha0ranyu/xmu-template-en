@@ -166,7 +166,11 @@
             学\qquad 院：\quad & \xmu@college      \\
             专\qquad 业：\quad & \xmu@subject      \\
             年\qquad 级：\quad & \xmu@grade        \\
-            校内指导教师：\quad    & \xmu@teacher      \\
+            \ifthenelse{\isundefined{\xmu@otherteacher}}{
+            指导教师：\quad    & \xmu@teacher   \\
+            }{
+            校内指导教师：\quad    & \xmu@teacher   \\
+            }
             \ifthenelse{\isundefined{\xmu@otherteacher}}{}{
             校外指导教师：\quad    & \xmu@otherteacher \\
             }
